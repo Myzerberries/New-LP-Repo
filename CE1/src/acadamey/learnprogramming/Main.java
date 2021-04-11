@@ -3,8 +3,7 @@ package acadamey.learnprogramming;
 public class Main {
 
     public static void main(String[] args) {
-       // long toMPH = toMilesPerHour(1.5);
-        printConversion(75.114);
+        printConversion(1.5);
     }
 
     public static long toMilesPerHour(double kilometersPerHour){
@@ -17,7 +16,10 @@ public class Main {
     }
 
     public static void printConversion(double kilometersPerHour){
-        System.out.println(toMilesPerHour(kilometersPerHour));
+        if(kilometersPerHour >=0){
+            System.out.println(kilometersPerHour + " km/h = " + toMilesPerHour(kilometersPerHour) + " mi/h");
+        }
+        else System.out.println("Invalid Value");
     }
 
 }
